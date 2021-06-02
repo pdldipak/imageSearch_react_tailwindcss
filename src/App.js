@@ -10,7 +10,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [term, setTerm] = useState('Nepal');
 
-  const fetchImages = async () => {
+  const fetchImages = async (term) => {
     setLoading(true);
     await axios
       .get(
@@ -25,7 +25,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetchImages();
+    fetchImages(term);
   }, [term]);
 
   return (
