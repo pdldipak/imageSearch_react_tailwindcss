@@ -1,0 +1,23 @@
+.card {
+  @apply bg-gray-200 max-w-sm rounded overflow-hidden shadow-lg;
+}
+
+img {
+  @apply h-60 w-full;
+}
+
+.card-body {
+  @apply px-6 py-2;
+}
+
+.card-title {
+  @apply font-bold text-purple-500 text-xl;
+}
+
+.card-content {
+  @apply flex flex-wrap justify-around p-4;
+}
+
+.card-content span {
+  @apply inline-block bg-gray-400 rounded-full px-3 m-1 text-sm font-semibold text-gray-700 mr-2 p-1;
+}
