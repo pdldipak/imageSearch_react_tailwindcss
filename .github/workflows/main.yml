@@ -15,8 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Install Dependencies
-        run: npm
+        run: yarn
       - name: Build
-        run: npm build
+        run: yarn build
       - name: Test
-        run: npm test --watchAll=false
+        run: yarn test --watchAll=false
